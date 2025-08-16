@@ -1,4 +1,4 @@
-import categoryButton from "./categoryButton.js";
+import categoryButtons from "./categoryButtons.js";
 import natureImageData from "./data.js";
 
 function init() {
@@ -7,20 +7,9 @@ function init() {
     const categories = Object.keys(natureImageData);
     console.log("Available categories:", categories);
     
-    renderCategoryButtons(["All", ...categories]);
+    categoryButtons(["All", ...categories]);
 }
 
-function renderCategoryButtons(categories) {
-
-  console.log("Rendering category buttons for:", categories);
-  const buttonContainer = document.querySelector(".category-buttons");
-  buttonContainer.innerHTML = ""; // Clear existing buttons
-
-  categories.forEach(category => {
-    const buttonHTML = categoryButton(category);
-    buttonContainer.innerHTML += buttonHTML;
-  });
-}
 
 init();
 

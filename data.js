@@ -1,5 +1,5 @@
 const natureImageData = {
-    "mountain": [
+    "mountains": [
         {
             //"url": "https://example.com/mountain1.jpg",
             "description": "A majestic mountain range at sunrise.",
